@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -15,6 +15,19 @@ public class App
         carReference.damaged= true;
         carReference.doorCount = 1;
         carReference.color = "Red";
+
+        Engine engine1 = new Engine();
+        engine1.capacity = 3000;
+        engine1.manufacturer = " Ferrari ";
+
+        carReference.engine = engine1;
+        System.out.println("Engine1 capacity: " + engine1.capacity);
+        System.out.println("Car engine capacity: " + carReference.engine.capacity);
+
+        engine1.capacity = 4000;
+        System.out.println("Car engine capacity after update: " + carReference.engine.capacity);
+
+
         // concatenation
         System.out.println("Properties of car " + carReference.name);
         System.out.println("Max speed: " + carReference.maxSpeed);
@@ -29,6 +42,9 @@ public class App
         car2.name = "Renault";
         car2.fuelLevel = 70;
         car2.totalTraveledDistance = 100;
+
+        car2.engine = new Engine();
+        car2.engine.capacity = 2000;
 
         System.out.println("Properties of car " + car2.name);
         System.out.println("Fuel level: " + car2.fuelLevel);
