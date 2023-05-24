@@ -15,7 +15,7 @@ public class App
         carReference.damaged= true;
         carReference.doorCount = 1;
         carReference.color = "Red";
-
+        // concatenation
         System.out.println("Properties of car " + carReference.name);
         System.out.println("Max speed: " + carReference.maxSpeed);
         System.out.println("Fuel level: " + carReference.fuelLevel);
@@ -37,5 +37,23 @@ public class App
         System.out.println("Damaged: " + car2.damaged);
         System.out.println("Door count: " + car2.doorCount);
         System.out.println("Color: " + car2.color);
+
+        System.out.println("Initial name for car1: " + carReference.name);
+        carReference.name = "Audi";
+        System.out.println("Changed name for car1: " + carReference.name);
+
+        carReference = new Car();
+        System.out.println("Name of new car: " + carReference.name);
+        carReference.name = "BMW";
+
+        carReference = car2;
+        System.out.println("Name of car from 2 variables. CarReference: " + carReference.name );
+        System.out.println("Name of car from 2 variables. Car2: " + car2.name );
+        car2.name = "Dacia";
+        System.out.println("Updated name of car from 2 variables. CarReference: " + carReference.name );
+        System.out.println("Updated name of car from 2 variables. Car2: " + car2.name );
+
+
+
     }
 }

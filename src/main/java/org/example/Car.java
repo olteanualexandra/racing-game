@@ -1,6 +1,7 @@
 package org.example;
 
 public class Car {
+    // instance variables
     String name;
     double fuelLevel;
     double mileage;
