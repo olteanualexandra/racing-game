@@ -49,9 +49,7 @@ public class App
         carReference = car2;
         System.out.println("Name of car from 2 variables. CarReference: " + carReference.name );
         System.out.println("Name of car from 2 variables. Car2: " + car2.name );
-        car2.name = "Dacia";
-        System.out.println("Updated name of car from 2 variables. CarReference: " + carReference.name );
-        System.out.println("Updated name of car from 2 variables. Car2: " + car2.name );
+
 
 
 
