@@ -1,6 +1,14 @@
 package org.example;
+
+import java.lang.reflect.Constructor;
+
 // "is-a" relationship (inheritance)
 public class Vehicle {
+    //class variables
+    static int totalVehicleCount;
+
+
+
     //instance variables
     String name;
     double fuelLevel;
@@ -9,6 +17,10 @@ public class Vehicle {
     double maxSpeed;
     boolean damaged;
     String color;
+
+    public Vehicle() {
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed, double durationInHours){
         if (fuelLevel <= 0 || damaged) {
